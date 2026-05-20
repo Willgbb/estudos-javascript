@@ -1,17 +1,13 @@
-alert('Ola qual seria o dia de hoje?');
-var dia = prompt('Digite dia da semana:');
+alert('coloque um numero negativo ou positivo')
 
-dia = dia.toLowerCase();
-dia = dia.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-dia = dia.charAt(0).toUpperCase() + dia.slice(1);
+let numero = Number(prompt('coloque um numero'));
 
-let fimDeSemana = ['Domingo', 'Sabado'];
-let diaSemana = ['Segunda', 'Terca', 'Quarta', 'Quinta', 'Sexta'];
-
-if (fimDeSemana.includes(dia)){
-    alert('Hoje é fim de semana, aproveite para descansar!');
-} else if (diaSemana.includes(dia)){
-    alert('Hoje é dia de semana, vá trabalhar!');
+if (Number.isNaN(numero)) {
+    alert('isso não é um numero')
+}else if (numero > 0) {
+    alert('esse numero é positivo')
+}else if (numero < 0) {
+    alert('esse numero é negativo')
 } else {
-    alert('Dia inválido!');
-}
+    alert('esse numero é zero')
+} 
