@@ -1,6 +1,5 @@
-@@ -0,0 +1,17 @@
 alert('Ola qual seria o dia de hoje?');
-var dia = prompt('Digite dia da semana:');
+let dia = prompt('Digite dia da semana:');
 
 dia = dia.toLowerCase();
 dia = dia.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
