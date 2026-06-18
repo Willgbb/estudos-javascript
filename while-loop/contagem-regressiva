@@ -1,0 +1,9 @@
+let inicio = prompt("Digite um número para iniciar a contagem regressiva: ");
+inicio = parseInt(inicio);
+
+let fim = 0;
+
+while (inicio >= fim) {
+    console.log(inicio)
+    inicio--;
+}
