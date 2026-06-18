@@ -1,0 +1,8 @@
+let inicio = 0
+let fim = prompt('digite um numero');
+fim = parseInt(fim);
+
+while (inicio <= fim) {
+    console.log(inicio)
+    inicio++;
+}
