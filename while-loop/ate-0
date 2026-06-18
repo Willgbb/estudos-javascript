@@ -1,0 +1,7 @@
+let inicio = 10;
+let fim = 0;
+
+while (inicio >= fim) {
+    console.log(inicio)
+    inicio--;
+}
