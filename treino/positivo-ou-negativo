@@ -1,0 +1,9 @@
+let numero = prompt("coloque um numero");
+
+if (numero > 0) {
+    console.log("seu numero é positivo");
+} else if (numero < 0) {
+    console.log("seu numero é negativo");
+} else {
+    console.log("seu numero é zero");
+}
